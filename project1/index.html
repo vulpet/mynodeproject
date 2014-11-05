@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Nodejs - 電腦網頁</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script src="http://Nodejs伺服器位置:埠號/socket.io/socket.io.js" type="text/javascript"></script>
+        <script src="http://vulpet.github.io/mynodeproject/project1/socket.io/socket.io.js" type="text/javascript"></script>
         <style type="text/css">
             #main {
                 display: none;
@@ -24,13 +24,13 @@
  
                 var key = NewGuid();
                 console.log(key);
-                $("#qrcode").append("<img src='http://chart.apis.google.com/chart?chs=300x300&cht=qr&chl=http://手機版網址/?key=" + key + "&choe=UTF-8' />");
+                $("#qrcode").append("<img src='http://chart.apis.google.com/chart?chs=300x300&cht=qr&chl=http://vulpet.github.io/mynodeproject/project1/phone.html/?key=" + key + "&choe=UTF-8' />");
  
                 // NodeJS Server
                 var nodejs_server = "Nodejs伺服器位置:埠號";
  
                 // 進行 connect
-                var socket = io.connect("http://" + nodejs_server);
+                var socket = io.connect("http://vulpet.github.io/mynodeproject/project1/phone.html");
  
                 // 偵聽 nodejs 事件
                 socket.on("get_response", function (b) {
