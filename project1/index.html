@@ -27,10 +27,10 @@
                 $("#qrcode").append("<img src='http://chart.apis.google.com/chart?chs=300x300&cht=qr&chl=http://vulpet.github.io/mynodeproject/project1/phone.html/?key=" + key + "&choe=UTF-8' />");
  
                 // NodeJS Server
-                var nodejs_server = "Nodejs伺服器位置:埠號";
+                //var nodejs_server = "Nodejs伺服器位置:埠號";
  
                 // 進行 connect
-                var socket = io.connect("http://vulpet.github.io/mynodeproject/project1/phone.html");
+                var socket = io.connect("http://vulpet.github.io/mynodeproject/project1");
  
                 // 偵聽 nodejs 事件
                 socket.on("get_response", function (b) {
