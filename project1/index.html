@@ -35,7 +35,7 @@
                 // 偵聽 nodejs 事件
                 socket.on("get_response", function (b) {
  
-                    var combine = b.key + "_" + b.act;
+                    var combine = b.key + "_" + b.act; 
                     console.log(combine);
  
                     switch (combine) {
@@ -45,7 +45,7 @@
                             setTimeout(function () {
  
                                 $("#qrcode").hide();
-                                $("#main").show();
+                                //$("#main").show();
  
                             }, 500);
                             break;
@@ -73,7 +73,7 @@
 <body>
  
         <div id="qrcode"></div>
-        <div id="main"><img src="amber.jpg" /></div>
+        <div id="main"><img src="Penguins.jpg" /></div>
  
 </body>
 </html>
